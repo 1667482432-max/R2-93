@@ -1,0 +1,24 @@
+{
+  "repository": "1667482432-max/R2-93",
+  "release_tag": "phase93-complete-project",
+  "train_channel_sha256": "972268d6cb6417b55612ecffb7079807e7800a9798037bd387447a23209f4970",
+  "train_channel_bytes": 6291456128,
+  "train_channel_parts": [
+    {"index": 1, "name": "Round2_Train_Channel.npy.part01", "bytes": 1572864000, "sha256": "3b419712c4ae9162990907137917cb080dad9b5a29aa0f6226695334acd950b6"},
+    {"index": 2, "name": "Round2_Train_Channel.npy.part02", "bytes": 1572864000, "sha256": "b74e88ae180a51ec5157761345a2ad748fe8890a460142eae737d07308f15583"},
+    {"index": 3, "name": "Round2_Train_Channel.npy.part03", "bytes": 1572864000, "sha256": "089e48aa69e1cf031113bce8924c70b41a39b3009a9b0a7fbdf1b49b51c570b1"},
+    {"index": 4, "name": "Round2_Train_Channel.npy.part04", "bytes": 1572864000, "sha256": "19ad37e2f87ecaaf2bbe420d5f4f0e00a3cee22686e9acd9c50bc0e8d3ec0805"},
+    {"index": 5, "name": "Round2_Train_Channel.npy.part05", "bytes": 128, "sha256": "1be79336f6c8d1ab2bdf78464eae0d2ee8a8489875d562a7fd9a478aca576628"}
+  ],
+  "assets": [
+    {"name": "Round2_Train_Channel.npy.part01", "bytes": 1572864000, "sha256": "3b419712c4ae9162990907137917cb080dad9b5a29aa0f6226695334acd950b6"},
+    {"name": "Round2_Train_Channel.npy.part02", "bytes": 1572864000, "sha256": "b74e88ae180a51ec5157761345a2ad748fe8890a460142eae737d07308f15583"},
+    {"name": "Round2_Train_Channel.npy.part03", "bytes": 1572864000, "sha256": "089e48aa69e1cf031113bce8924c70b41a39b3009a9b0a7fbdf1b49b51c570b1"},
+    {"name": "Round2_Train_Channel.npy.part04", "bytes": 1572864000, "sha256": "19ad37e2f87ecaaf2bbe420d5f4f0e00a3cee22686e9acd9c50bc0e8d3ec0805"},
+    {"name": "Round2_Train_Channel.npy.part05", "bytes": 128, "sha256": "1be79336f6c8d1ab2bdf78464eae0d2ee8a8489875d562a7fd9a478aca576628"},
+    {"name": "Round2_Test_Channel_matched_phase9_buildable_anchor_joint.npy", "bytes": 786432128, "sha256": "b00817e8741a5cefc92ba376bde8875ecaa869868410886777609882ccf66a0c"},
+    {"name": "Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy", "bytes": 786432128, "sha256": "4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966"},
+    {"name": "Round2_Test_Channel_phase40_p9_actual_antip10_pas050.npy", "bytes": 786432128, "sha256": "4876ba6a39b0c9e9c1309d08615e2c3788f4149c4c2a594346393fab4e60a740"},
+    {"name": "Phase93_output_reference.npy", "bytes": 786432128, "sha256": "047b821a5dc6b02abb7fe99c899b2060e52f2b14504a2c2e1605b84adb4201e8"}
+  ]
+}

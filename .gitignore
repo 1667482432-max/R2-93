@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+Round2_Train_Channel.npy
+Round2_Test_Channel_*.npy
+Phase93_output_reference.npy
+*.part*

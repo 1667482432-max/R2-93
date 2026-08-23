@@ -1,0 +1,80 @@
+{
+  "phase": 93,
+  "experiment": "Orthogonal composite of Phase89 g5/g6 full192 anti-P10 and Phase90 symmetric clamp-floor scaling",
+  "frozen_before_any_phase92_or_phase93_score_was_read": true,
+  "purpose": "Combine two fixed mechanisms whose validation support is concentrated in complementary folds: stable g5/g6 full-frequency PAS correction and parameter-free low-energy UE clamp repair. Test their exact interaction on top of the official-best Phase40 family.",
+  "selection_disclosure": {
+    "known_phase89_relative_to_phase40_deltas": [
+      0.0004244234,
+      0.0007713099,
+      0.0003495605,
+      -0.0001296983,
+      0.0003140124
+    ],
+    "known_phase90_relative_to_p9_deltas": [
+      0.0016605425702053145,
+      -2.0095036745715333e-14,
+      1.5783046247719312e-7,
+      0.0,
+      0.0007691510858099937
+    ],
+    "phase92_result_known_at_freeze": false,
+    "phase93_interaction_scores_known_at_freeze": false,
+    "dose_or_parameter_search": false
+  },
+  "reference": {
+    "candidate": "exact Phase40 official-feedback anti-P10 PAS eta=0.50 channel",
+    "folds": [0, 1, 2, 3, 4],
+    "official_geometry_weights": true,
+    "zero_channel_outliers_excluded": 262
+  },
+  "fixed_composition": {
+    "step1": "Reconstruct exact complete P9 channel.",
+    "step2": "Apply the exact Phase79 full-192 Gaussian local PAS correction only in official groups 5 and 6 with dose 0.20.",
+    "step3": "Apply the exact Phase40 anti-P10 PAS eta=0.50 direction computed from the original P9/P10 descriptors, in the same order and implementation as Phase89.",
+    "step4": "Compute the exact frozen Phase90 per-sample-by-UE scale from the original P9 prediction, not from truth and not from the intermediate composite.",
+    "step5": "Broadcast that positive Phase90 scale over all BS antennas and subcarriers of the corresponding UE branch of the step3 channel.",
+    "formula": "C93[i,:,u,:] = s90(P9[i],u) * C89[i,:,u,:]",
+    "reason_for_original_p9_scale_source": "It preserves the two previously frozen modules exactly and prevents interaction-conditioned threshold tuning.",
+    "phase90_scale_rule": {
+      "power_norm_low_tail_quantile": 0.01,
+      "symmetric_boundary": 1e-15,
+      "raw_scale": "sqrt(1e-15/max(min(q01_PAS_norm,q01_PDP_norm),1e-30))",
+      "clip": [1.0, 5.0]
+    }
+  },
+  "validation": {
+    "heldout_truth_use": "Each fold truth is used only for final scoring after every transform and scale is determined without heldout truth.",
+    "required_reproduction": {
+      "P9_max_abs_metric_error_lte": 1e-10,
+      "Phase40_max_abs_metric_error_lte": 1e-10,
+      "Phase89_max_abs_metric_error_lte": 1e-10,
+      "Phase90_max_abs_metric_error_lte": 1e-8
+    },
+    "required_integrity": [
+      "finite and nonzero candidate",
+      "Phase90 scale-one UE branches bitwise equal to Phase89",
+      "no test truth, test artifact, or upload"
+    ]
+  },
+  "pass_rule": {
+    "mean_delta_vs_phase40_gte": 0.00075,
+    "positive_folds_gte": 4,
+    "minimum_delta_gte": -0.0002,
+    "lcb_mean_minus_0.75_population_std_gt": 0.0,
+    "all_reproduction_and_integrity_checks": true
+  },
+  "after_validation": {
+    "if_pass": "A separate frozen build phase may construct the official 500-row test NPY, perform byte-level QA, and upload a GitHub release.",
+    "if_fail": "Retire this exact composite with no strength or order adjustment.",
+    "parameter_adjustment_after_result": false
+  },
+  "forbidden": {
+    "using_phase92_result_to_change_phase93": true,
+    "dose_scale_group_or_order_sweep": true,
+    "heldout_truth_in_any_transform": true,
+    "test_channel_generation": true,
+    "test_artifact_build": true,
+    "github_upload": true
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "status": "complete",
+  "protocol": "exact Phase89 test channel then original-P9-only Phase90 symmetric clamp-floor per UE",
+  "builder": "build_phase93_g56_antip10_plus_symmetric_clamp_submission.py",
+  "builder_sha256_before_manifest": "f2adf7446f8516faf7e3fd7bec895563a0855ffca451f7245791b14bd99300aa",
+  "source_audit": {
+    "phase93_predeclare": {
+      "path": "D:\\Round2 sec\\phase93_g56_antip10_plus_symmetric_clamp_predeclared.json",
+      "expected_sha256": "bfc9c5dd88ce1a4d2a767515a906657cabd252d7cadf959d5fdfee4cf60b6734",
+      "actual_sha256": "bfc9c5dd88ce1a4d2a767515a906657cabd252d7cadf959d5fdfee4cf60b6734",
+      "match": true
+    },
+    "phase93_validation": {
+      "path": "D:\\Round2 sec\\phase93_g56_antip10_plus_symmetric_clamp_validation.json",
+      "expected_sha256": "5861ebe1ecb65c8783abdefac4cc05e135e973c977606a606fb4f8ebe30f9eee",
+      "actual_sha256": "5861ebe1ecb65c8783abdefac4cc05e135e973c977606a606fb4f8ebe30f9eee",
+      "match": true
+    },
+    "phase89_script": {
+      "path": "D:\\Round2 sec\\phase89_g56_full192_then_antip10_pas050_validation.py",
+      "expected_sha256": "c171767b00d60de8bedde5af276de6d10fb4a97e13810e2db7c483a081d3b796",
+      "actual_sha256": "c171767b00d60de8bedde5af276de6d10fb4a97e13810e2db7c483a081d3b796",
+      "match": true
+    },
+    "phase90_script": {
+      "path": "D:\\Round2 sec\\phase90_symmetric_clampfloor_perue.py",
+      "expected_sha256": "43e89b99bd41473f754561ac95da9a3f1f3bb26f2969d8d0f0c5cbd2d4ce2835",
+      "actual_sha256": "43e89b99bd41473f754561ac95da9a3f1f3bb26f2969d8d0f0c5cbd2d4ce2835",
+      "match": true
+    },
+    "p9": {
+      "path": "D:\\Round2 sec\\Round2_Test_Channel_matched_phase9_buildable_anchor_joint.npy",
+      "expected_sha256": "b00817e8741a5cefc92ba376bde8875ecaa869868410886777609882ccf66a0c",
+      "actual_sha256": "b00817e8741a5cefc92ba376bde8875ecaa869868410886777609882ccf66a0c",
+      "match": true
+    },
+    "p10": {
+      "path": "D:\\Round2 sec\\Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy",
+      "expected_sha256": "4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966",
+      "actual_sha256": "4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966",
+      "match": true
+    },
+    "phase40": {
+      "path": "C:\\Users\\asus\\AppData\\Local\\Temp\\Round2_Test_Channel_phase40_p9_actual_antip10_pas050.npy",
+      "expected_sha256": "4876ba6a39b0c9e9c1309d08615e2c3788f4149c4c2a594346393fab4e60a740",
+      "actual_sha256": "4876ba6a39b0c9e9c1309d08615e2c3788f4149c4c2a594346393fab4e60a740",
+      "match": true
+    }
+  },
+  "zero_outliers_removed": 262,
+  "official_group_counts": {
+    "0": 90,
+    "1": 21,
+    "2": 2,
+    "3": 63,
+    "4": 67,
+    "5": 43,
+    "6": 46,
+    "7": 50,
+    "8": 22,
+    "9": 55,
+    "10": 41
+  },
+  "anchor_diagnostics": {
+    "active_groups": [
+      5,
+      6
+    ],
+    "active_test_rows": 89,
+    "anchor_counts": {
+      "5": 22,
+      "6": 42
+    },
+    "anchor_training_indices_sha256": "53b4dce415bf6756a3fda55f992309cb21894301f8a815d9e90c8bafd3dba6ec",
+    "anchor_truth_full192_sha256": "223e5b120ce4773fc50675af4a059f5a0423ba0c20d77acb8bfdcade6876abfe",
+    "anchor_target_full192_sha256": "ae5bca3c9e34b2a15a6f60b035113fd232f9c624837450f146afa212ddd593c4",
+    "alignment": "horizontal",
+    "neighbors": 4,
+    "distance_power": 2.0
+  },
+  "frozen_parameters": {
+    "phase79_active_groups": [
+      5,
+      6
+    ],
+    "phase79_full192_dose": 0.2,
+    "phase79_iterations": 12,
+    "phase40_eta": 0.5,
+    "phase90_low_tail_quantile": 0.01,
+    "phase90_symmetric_boundary": 1e-15,
+    "phase90_scale_bounds": [
+      1.0,
+      5.0
+    ],
+    "phase90_scale_source": "original P9 prediction only"
+  },
+  "output": {
+    "path": "C:\\Users\\asus\\AppData\\Local\\Temp\\Round2_Test_Channel_phase93_g56_antip10_plus_symmetric_clamp.npy",
+    "name": "Round2_Test_Channel_phase93_g56_antip10_plus_symmetric_clamp.npy",
+    "sha256": "047b821a5dc6b02abb7fe99c899b2060e52f2b14504a2c2e1605b84adb4201e8",
+    "shape": [
+      500,
+      256,
+      4,
+      192
+    ],
+    "dtype": "complex64",
+    "bytes": 786432128
+  },
+  "qa": {
+    "shape": [
+      500,
+      256,
+      4,
+      192
+    ],
+    "dtype": "complex64",
+    "bytes": 786432128,
+    "finite_stream": true,
+    "finite_reload": true,
+    "all_rows_nonzero_stream": true,
+    "all_rows_nonzero_reload": true,
+    "non_g56_rows_compared_to_phase40": 411,
+    "non_g56_phase89_bitwise_phase40": true,
+    "non_g56_phase89_vs_phase40_max_abs_error": 0.0,
+    "scale_one_branches_compared_to_phase89": 2000,
+    "scale_one_branches_bitwise_phase89": true,
+    "active_scale_branches": 0,
+    "inactive_scale_branches": 2000,
+    "scale_quantiles": {
+      "minimum": 1.0,
+      "q01": 1.0,
+      "q05": 1.0,
+      "median": 1.0,
+      "q95": 1.0,
+      "q99": 1.0,
+      "maximum": 1.0,
+      "mean": 1.0
+    },
+    "q_pas_quantiles": {
+      "minimum": 1.6951422986840155e-15,
+      "q01": 2.068731287658021e-15,
+      "q05": 6.29421492631335e-15,
+      "median": 1.6542759078818496e-12,
+      "q95": 3.13382861622663e-11,
+      "q99": 7.567015881324022e-11,
+      "maximum": 1.3323890282745942e-10,
+      "mean": 6.853672901654084e-12
+    },
+    "q_pdp_quantiles": {
+      "minimum": 1.4001013261008506e-15,
+      "q01": 2.645009444377083e-15,
+      "q05": 6.5081090342069425e-15,
+      "median": 2.0540558511895898e-12,
+      "q95": 1.6228499499087996e-11,
+      "q99": 4.6722662344969574e-11,
+      "maximum": 8.677039260718277e-11,
+      "mean": 4.435757870003439e-12
+    },
+    "phase89_stream_data_sha256": "159ab399e83fc716ba24a4d2ecb0a29e671b77f5a0005eb36f7530f17ac54400",
+    "phase93_stream_data_sha256": "159ab399e83fc716ba24a4d2ecb0a29e671b77f5a0005eb36f7530f17ac54400"
+  },
+  "validation_basis": {
+    "phase93_local_mean_delta_vs_phase40": 0.000806178657385237,
+    "phase93_lcb_mean_minus_0.75std": 0.000271591632818545,
+    "phase93_positive_folds": 4,
+    "phase93_minimum_fold_delta": -0.000129698287416824
+  },
+  "uploaded": true,
+  "release": {
+    "tag": "matched-phase93-g56-antip10-plus-symmetric-clamp",
+    "title": "Phase93 g5/g6 anti-P10 + symmetric clamp — local mean delta +0.000806 vs Phase40",
+    "html_url": "https://github.com/1667482432-max/R2/releases/tag/matched-phase93-g56-antip10-plus-symmetric-clamp",
+    "asset_name": "Round2_Test_Channel_phase93_g56_antip10_plus_symmetric_clamp.npy",
+    "asset_size": 786432128,
+    "asset_state": "uploaded",
+    "asset_digest": "sha256:047b821a5dc6b02abb7fe99c899b2060e52f2b14504a2c2e1605b84adb4201e8",
+    "public_rest_exact_size_verified": true,
+    "public_rest_exact_digest_verified": true
+  }
+}
