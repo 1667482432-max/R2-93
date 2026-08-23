@@ -1,0 +1,116 @@
+{
+  "output": "Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy",
+  "shape": [
+    500,
+    256,
+    4,
+    192
+  ],
+  "dtype": "complex64",
+  "bytes": 786432128,
+  "finite": true,
+  "all_test_rows_nonzero": true,
+  "row_energy_min": 5.408832236264427e-12,
+  "row_energy_max": 3.196006446160027e-07,
+  "pas_target_mean_cosine": 0.999191827621311,
+  "phase6_pdp_mean_cosine": 0.9989935854378855,
+  "nmse_vs_phase6_channel": 0.03694674711832957,
+  "generated_sample_hashes": {
+    "0": "bf4aa2cdb72d5f0e3a6047dc27177dd84af5d3b5d0aca3b22b7c2c3e299b6325",
+    "1": "22655d60de3a6804d43463319ceef46f426025a58cfd0a220944f36f41b2bdba",
+    "17": "2ea94034eaa1cfbfcbaaacbe1ec6af0633c873d8b52b667c60f6ef792ce7bf8c",
+    "249": "97787c1b2efc71811d33751ab581a41811ff6f412843a6df366eeff5ee4c8218",
+    "499": "80a08434b3c9cea7fff85ffd7c6df94cc777328d6b71ef6d5803930bc63ffcd0"
+  },
+  "reloaded_sample_hashes": {
+    "0": "bf4aa2cdb72d5f0e3a6047dc27177dd84af5d3b5d0aca3b22b7c2c3e299b6325",
+    "1": "22655d60de3a6804d43463319ceef46f426025a58cfd0a220944f36f41b2bdba",
+    "17": "2ea94034eaa1cfbfcbaaacbe1ec6af0633c873d8b52b667c60f6ef792ce7bf8c",
+    "249": "97787c1b2efc71811d33751ab581a41811ff6f412843a6df366eeff5ee4c8218",
+    "499": "80a08434b3c9cea7fff85ffd7c6df94cc777328d6b71ef6d5803930bc63ffcd0"
+  },
+  "independent_reload_sample_hashes_match": true,
+  "sha256": "4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966",
+  "base": {
+    "path": "Round2_Test_Channel_matched_phase6_delta2053.npy",
+    "sha256": "3197aecf0b2d81f472fd277f19e560a65baebb4025e6cd0307c478883308f424",
+    "cumulative_delta_vs_matched_v3": 0.020525418923835668
+  },
+  "pas_target": {
+    "path": "phase10_core125_complement100_primary_anchor_pas_band24_test.npy",
+    "shape": [
+      500,
+      256,
+      4,
+      24
+    ],
+    "dtype": "float32",
+    "bytes": 49152128,
+    "sha256": "b8a4cf698e136ce88429bb19c31930811f95690ef363328aa0632e654c6edf4d",
+    "min": 0.0,
+    "negative_fraction": 0.0
+  },
+  "validation": {
+    "frozen_before_evaluation": true,
+    "selection_or_tuning_performed": false,
+    "joint_fold_deltas_vs_phase6": [
+      0.004169310955583705,
+      0.004758601768231729,
+      0.011221930775263012,
+      0.004744120691140052,
+      0.006463255839641691
+    ],
+    "joint_geometry_weighted_delta": 0.006149953178409682,
+    "joint_min_fold_delta": 0.004169310955583705,
+    "joint_lcb_delta": 0.004327670797606267,
+    "locked_edge_joint_delta": 0.005795739868249994,
+    "fold_increments_vs_core_anchor": [
+      0.00025167302258555235,
+      0.0007630112346679319,
+      0.0016728350828275618,
+      0.00044699980139784046,
+      4.881449899951651e-05
+    ],
+    "geometry_weighted_increment_vs_core_anchor": 0.0007565840610368917,
+    "locked_edge_increment_vs_core_anchor": 0.00070458832095599,
+    "rotation_increments_vs_core_anchor": [
+      -0.00018291138185100309,
+      0.002366767257157454,
+      0.0002518999559966151,
+      4.122975842690835e-05
+    ],
+    "rotation_positive_count": 3,
+    "all_folds_positive": true,
+    "all_fold_non_decreasing_vs_core_anchor": true,
+    "fixed_confirmation_passed": true
+  },
+  "local_cumulative_delta_estimates_vs_matched_v3": {
+    "geometry_weighted": 0.02667537210224535,
+    "locked_edge": 0.02632115879208566
+  },
+  "model": {
+    "channel_base": "Phase6 official-best base",
+    "pas_target": "phase10_core125_complement100_primary_anchor_pas_band24_test.npy",
+    "pas_bands": 24,
+    "alternating_projection_iterations": 4,
+    "pas_ratio_clip": [
+      0.25,
+      4.0
+    ],
+    "pdp_constraint": "the Phase6 base PDP is the sole PDP constraint each iteration; no new PDP target",
+    "pdp_correction_power": 1.5,
+    "final_projection_step": "PAS",
+    "batch_size": 4
+  },
+  "training_rows_used": 3738,
+  "zero_channel_outliers_removed": 262,
+  "upload_status": {
+    "state": "uploaded",
+    "repository": "1667482432-max/R2",
+    "tag": "matched-phase10-core125-complement100-anchor-delta-0.0263",
+    "release_url": "https://github.com/1667482432-max/R2/releases/tag/matched-phase10-core125-complement100-anchor-delta-0.0263",
+    "asset_url": "https://github.com/1667482432-max/R2/releases/download/matched-phase10-core125-complement100-anchor-delta-0.0263/Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy",
+    "remote_size": 786432128,
+    "remote_digest": "sha256:4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966"
+  }
+}

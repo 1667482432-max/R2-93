@@ -1,0 +1,61 @@
+{
+  "output": "Round2_Test_Channel_matched_phase6_delta2053.npy",
+  "shape": [
+    500,
+    256,
+    4,
+    192
+  ],
+  "dtype": "complex64",
+  "bytes": 786432128,
+  "finite": true,
+  "all_test_rows_nonzero": true,
+  "sha256": "3197aecf0b2d81f472fd277f19e560a65baebb4025e6cd0307c478883308f424",
+  "validation": {
+    "scale": 1.25,
+    "pdp_strength": 1.5,
+    "iterations": 12,
+    "scores": [
+      0.6651908456989198,
+      0.6668667659320731,
+      0.629826982372105,
+      0.655797271554623,
+      0.6129554821132367
+    ],
+    "deltas": [
+      0.0021371678878207012,
+      0.00537671654467875,
+      0.004296394007347937,
+      0.003950623951104237,
+      0.004782290395723754
+    ],
+    "mean_delta": 0.004108638557335076,
+    "min_delta": 0.0021371678878207012,
+    "lcb": 0.003286456147813961
+  },
+  "delta_vs_phase5": 0.004108638557335076,
+  "cumulative_delta_vs_matched_v3": 0.020525418923835668,
+  "training_rows_used": 3738,
+  "zero_channel_outliers_removed": 262,
+  "test_rule_selection_counts": {
+    "0": 90,
+    "1": 21,
+    "2": 2,
+    "3": 63,
+    "4": 67,
+    "5": 43,
+    "6": 46,
+    "7": 50,
+    "8": 22,
+    "9": 55,
+    "10": 41
+  },
+  "model": {
+    "bands": 24,
+    "projection_scale": 1.25,
+    "pdp_strength": 1.5,
+    "iterations": 12,
+    "validation_split": "five disjoint official-like rectangular holdouts",
+    "selection_policy": "positive on all five folds; robust LCB prioritized"
+  }
+}

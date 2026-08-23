@@ -21,16 +21,17 @@ The script downloads the generated arrays and verifies every SHA256 in
 
 ## End-to-end commands
 
-After the one-click setup, the frozen validation path is:
+After supplying the authorized original competition data and the frozen
+derived prerequisites listed in `phase93_release_assets.json`, the complete
+rebuild path is:
 
 ```powershell
-python .\phase93_g56_antip10_plus_symmetric_clamp_validation.py
-python .\build_phase93_g56_antip10_plus_symmetric_clamp_submission.py
+python .\build_phase93_end_to_end.py
 ```
 
-The builder writes the 500-row complex64 output and a QA manifest. It refuses
-to overwrite an existing output, detects zero-channel outliers, and checks the
-frozen source hashes before producing anything.
+The orchestrator runs P9 → Phase10 → Phase40 → Phase93. Each stage writes a
+500-row complex64 result and refuses to overwrite an existing output. The
+standalone Phase93 builder remains available for auditing the final stage.
 
 The project intentionally preserves the original Phase93 protocol. It does
 not tune against test truth and does not silently substitute later phases.

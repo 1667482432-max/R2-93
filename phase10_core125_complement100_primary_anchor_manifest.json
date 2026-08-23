@@ -1,0 +1,469 @@
+{
+  "validation_passed": true,
+  "validation_gate": "relative to core robust125 + primary anchor: locked edge increment > 0 and all five fold increments >= 0",
+  "validation_summary": {
+    "core_anchor_fold_deltas_vs_phase6": [
+      0.0039176379329981526,
+      0.0039955905335637976,
+      0.00954909569243545,
+      0.004297120889742212,
+      0.006414441340642174
+    ],
+    "joint_anchor_fold_deltas_vs_phase6": [
+      0.004169310955583705,
+      0.004758601768231729,
+      0.011221930775263012,
+      0.004744120691140052,
+      0.006463255839641691
+    ],
+    "fold_increments_vs_core_anchor": [
+      0.00025167302258555235,
+      0.0007630112346679319,
+      0.0016728350828275618,
+      0.00044699980139784046,
+      4.881449899951651e-05
+    ],
+    "core_anchor_geometry_weighted_delta": 0.005393369117372791,
+    "joint_anchor_geometry_weighted_delta": 0.006149953178409682,
+    "geometry_weighted_increment_vs_core_anchor": 0.0007565840610368917,
+    "locked_edge_core_anchor_delta": 0.005091151547294004,
+    "locked_edge_joint_anchor_delta": 0.005795739868249994,
+    "locked_edge_increment_vs_core_anchor": 0.00070458832095599,
+    "rotation_increments_vs_core_anchor": [
+      -0.00018291138185100309,
+      0.002366767257157454,
+      0.0002518999559966151,
+      4.122975842690835e-05
+    ],
+    "rotation_positive_count": 3,
+    "all_fold_non_decreasing": true,
+    "fixed_confirmation_passed": true
+  },
+  "parameters": {
+    "core_groups": [
+      1,
+      3,
+      4,
+      9,
+      10
+    ],
+    "core_family": "frozen robust_binary_all subset",
+    "core_alpha": 1.25,
+    "complement_groups": [
+      0,
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "complement_family": "graph_canonical_gp with frozen global-selection weights",
+    "complement_alpha": 1.0,
+    "anchor_groups": [
+      4,
+      5,
+      10
+    ],
+    "residual_alpha": 0.1,
+    "local_scale": 0.5,
+    "local_clip": 0.3,
+    "projection_bands": 24,
+    "projection_iterations": 4
+  },
+  "raw_pas_target": {
+    "path": "phase10_core125_complement100_pas_band24_test.npy",
+    "shape": [
+      500,
+      256,
+      4,
+      24
+    ],
+    "dtype": "float32",
+    "bytes": 49152128,
+    "sha256": "802ed133de515dfe375d34653b909ea4ce15dd72727c6e0f4d3e4407d73be2a6"
+  },
+  "final_joint_pas_target": {
+    "path": "phase10_core125_complement100_primary_anchor_pas_band24_test.npy",
+    "shape": [
+      500,
+      256,
+      4,
+      24
+    ],
+    "dtype": "float32",
+    "bytes": 49152128,
+    "sha256": "b8a4cf698e136ce88429bb19c31930811f95690ef363328aa0632e654c6edf4d",
+    "min": 0.0,
+    "negative_fraction": 0.0
+  },
+  "test_geometry": {
+    "official_counts": {
+      "0": 90,
+      "1": 21,
+      "2": 2,
+      "3": 63,
+      "4": 67,
+      "5": 43,
+      "6": 46,
+      "7": 50,
+      "8": 22,
+      "9": 55,
+      "10": 41
+    },
+    "anchor_count": 181,
+    "anchor_counts": {
+      "0": 24,
+      "1": 1,
+      "2": 0,
+      "3": 10,
+      "4": 24,
+      "5": 22,
+      "6": 42,
+      "7": 3,
+      "8": 5,
+      "9": 1,
+      "10": 49
+    },
+    "gate_raw_quantiles": [
+      0.05000000074505806,
+      0.20000000298023224,
+      0.4000000059604645,
+      0.550000011920929,
+      0.6000000238418579
+    ],
+    "applied_alpha_mean_all": 0.07485000789165497,
+    "applied_alpha_mean_anchor_groups": 0.24784767627716064
+  },
+  "source_diagnostic": {
+    "active_groups": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "alpha_by_group": {
+      "0": 1.0,
+      "1": 1.25,
+      "2": 1.0,
+      "3": 1.25,
+      "4": 1.25,
+      "5": 1.0,
+      "6": 1.0,
+      "7": 1.0,
+      "8": 1.0,
+      "9": 1.25,
+      "10": 1.25
+    },
+    "candidate_count": 20,
+    "canonical_count": 5,
+    "anchor_counts_by_action": {
+      "g3_plain_idw1": 10,
+      "g4_plain_nearest": 24,
+      "g10_hv_nearest": 49
+    },
+    "robust_min": 0.0,
+    "robust_negative_fraction": 0.0
+  },
+  "actions": {
+    "0": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "plain",
+          "map8_w2",
+          6,
+          "inverse2"
+        ],
+        "action_exponent": 0.025,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.05
+      }
+    ],
+    "1": [
+      {
+        "index": 0,
+        "family": "harmonic",
+        "parameters": [
+          "plain",
+          8,
+          "gauss20"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.3
+      },
+      {
+        "index": 1,
+        "family": "graph",
+        "parameters": [
+          "h",
+          "polar50",
+          6,
+          "exp20"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 1.25,
+        "effective_log_exponent": 0.1875
+      },
+      {
+        "index": 2,
+        "family": "canonical",
+        "parameters": [
+          "hv_forest3"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 1.25,
+        "effective_log_exponent": 0.1875
+      }
+    ],
+    "2": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "plain",
+          "map8_w2",
+          12,
+          "inverse2"
+        ],
+        "action_exponent": 0.1,
+        "portfolio_weight": 1.25,
+        "effective_log_exponent": 0.125
+      },
+      {
+        "index": 2,
+        "family": "canonical",
+        "parameters": [
+          "plain_extra3"
+        ],
+        "action_exponent": 0.05,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.1
+      }
+    ],
+    "3": [
+      {
+        "index": 0,
+        "family": "canonical",
+        "parameters": [
+          "h_extra8"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 0.75,
+        "effective_log_exponent": 0.11249999999999999
+      },
+      {
+        "index": 1,
+        "family": "anchor",
+        "parameters": [
+          "plain",
+          "idw1"
+        ],
+        "action_exponent": 0.075,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.15
+      },
+      {
+        "index": 2,
+        "family": "graph",
+        "parameters": [
+          "h",
+          "map16_w4",
+          6,
+          "exp20"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 0.75,
+        "effective_log_exponent": 0.11249999999999999
+      }
+    ],
+    "4": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "h",
+          "map16_w4",
+          8,
+          "inverse2"
+        ],
+        "action_exponent": 0.1,
+        "portfolio_weight": 1.25,
+        "effective_log_exponent": 0.125
+      },
+      {
+        "index": 2,
+        "family": "anchor",
+        "parameters": [
+          "plain",
+          "nearest"
+        ],
+        "action_exponent": 0.025,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.05
+      }
+    ],
+    "5": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "hv",
+          "map16_w4",
+          6,
+          "exp20"
+        ],
+        "action_exponent": 0.025,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.05
+      },
+      {
+        "index": 2,
+        "family": "gp",
+        "parameters": [
+          "hv",
+          32,
+          "matern32",
+          1.0,
+          0.03,
+          "ordinary"
+        ],
+        "action_exponent": 0.025,
+        "portfolio_weight": 1.5,
+        "effective_log_exponent": 0.037500000000000006
+      }
+    ],
+    "6": [
+      {
+        "index": 2,
+        "family": "canonical",
+        "parameters": [
+          "plain_rbf"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.3
+      }
+    ],
+    "7": [
+      {
+        "index": 0,
+        "family": "canonical",
+        "parameters": [
+          "hv_rbf"
+        ],
+        "action_exponent": 0.1,
+        "portfolio_weight": 0.5,
+        "effective_log_exponent": 0.05
+      },
+      {
+        "index": 2,
+        "family": "graph",
+        "parameters": [
+          "h",
+          "map16_w4",
+          6,
+          "exp20"
+        ],
+        "action_exponent": 0.025,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.05
+      }
+    ],
+    "8": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "hv",
+          "xy_x025",
+          6,
+          "inverse2"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 2.0,
+        "effective_log_exponent": 0.3
+      }
+    ],
+    "9": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "hv",
+          "xy_x4",
+          8,
+          "inverse2"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 1.5,
+        "effective_log_exponent": 0.22499999999999998
+      },
+      {
+        "index": 1,
+        "family": "gp",
+        "parameters": [
+          "h",
+          32,
+          "exponential",
+          0.5,
+          0.03,
+          "gp"
+        ],
+        "action_exponent": 0.3,
+        "portfolio_weight": 1.25,
+        "effective_log_exponent": 0.375
+      }
+    ],
+    "10": [
+      {
+        "index": 0,
+        "family": "graph",
+        "parameters": [
+          "hv",
+          "map16_w4",
+          6,
+          "exp20"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 1.0,
+        "effective_log_exponent": 0.15
+      },
+      {
+        "index": 1,
+        "family": "gp",
+        "parameters": [
+          "plain",
+          32,
+          "matern32",
+          0.5,
+          0.03,
+          "ordinary"
+        ],
+        "action_exponent": 0.2,
+        "portfolio_weight": 1.0,
+        "effective_log_exponent": 0.2
+      },
+      {
+        "index": 2,
+        "family": "anchor",
+        "parameters": [
+          "hv",
+          "nearest"
+        ],
+        "action_exponent": 0.15,
+        "portfolio_weight": 1.0,
+        "effective_log_exponent": 0.15
+      }
+    ]
+  },
+  "next_step": "project Phase6 channel toward final_joint_pas_target with 24 bands and 4 iterations; preserve PDP target"
+}

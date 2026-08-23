@@ -3,9 +3,18 @@
   "release_tag": "phase93-complete-project",
   "original_competition_data": "not included; provide authorized train/test positions, train channel and energy files separately",
   "assets": [
-    {"name": "Round2_Test_Channel_matched_phase9_buildable_anchor_joint.npy", "bytes": 786432128, "sha256": "b00817e8741a5cefc92ba376bde8875ecaa869868410886777609882ccf66a0c"},
-    {"name": "Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy", "bytes": 786432128, "sha256": "4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966"},
-    {"name": "Round2_Test_Channel_phase40_p9_actual_antip10_pas050.npy", "bytes": 786432128, "sha256": "4876ba6a39b0c9e9c1309d08615e2c3788f4149c4c2a594346393fab4e60a740"},
-    {"name": "Phase93_output_reference.npy", "bytes": 786432128, "sha256": "047b821a5dc6b02abb7fe99c899b2060e52f2b14504a2c2e1605b84adb4201e8"}
+    {"name":"Round2_Test_Channel_matched_phase6_delta2053.npy","bytes":786432128,"sha256":"3197aecf0b2d81f472fd277f19e560a65baebb4025e6cd0307c478883308f424"},
+    {"name":"pas_ue_band24_descriptors.npy","bytes":393216128,"sha256":"70c0665aa9231e99efff183d5399777c37499e9fcbbdd99d4002b298fc6a5b20"},
+    {"name":"matched_phase6_milestone_physics_pas_band24_test.npy","bytes":49152128,"sha256":"365a9207c85b2ad921a9c3cad1ff7688cb76282bd258b98e158b8baf81193a5c"},
+    {"name":"phase10_core125_complement100_primary_anchor_pas_band24_test.npy","bytes":49152128,"sha256":"b8a4cf698e136ce88429bb19c31930811f95690ef363328aa0632e654c6edf4d"},
+    {"name":"los_map_features.npy","bytes":288128,"sha256":"b584d5e801fd466a78446010d52b5d330f23088a1205aa09822d7823f83188ae"},
+    {"name":"rich_map_features.npy","bytes":3906128,"sha256":"7ec17628c400629e72a75cd7921ffc4567fe23c8924cff28e9393d58eeab7bd8"},
+    {"name":"matched_tree_pas_band24_test.npy","bytes":49152128,"sha256":"34d2bdf51bad2ac04c9735beed6747b35c00b3f19e6021a024a04b82add1cd0e"},
+    {"name":"matched_rbf_pas_band24_test.npy","bytes":49152128,"sha256":"152a0e38922cd08f395212f6c6db71e614b4e48bceb0a2714af6a9d683416520"},
+    {"name":"matched_phase6_pas_rich_gate_features.npz","bytes":2722991,"sha256":"83e7ea76c400629e72a75cd7921ffc4567fe23c8924cff28e9393d58eeab7bd8"},
+    {"name":"Round2_Test_Channel_matched_phase9_buildable_anchor_joint.npy","bytes":786432128,"sha256":"b00817e8741a5cefc92ba376bde8875ecaa869868410886777609882ccf66a0c"},
+    {"name":"Round2_Test_Channel_phase10_core125_complement100_anchor_pas.npy","bytes":786432128,"sha256":"4ae82162723dbc61eed349ff0a8477b0432c6ce5c19e515a48815383757ac966"},
+    {"name":"Round2_Test_Channel_phase40_p9_actual_antip10_pas050.npy","bytes":786432128,"sha256":"4876ba6a39b0c9e9c1309d08615e2c3788f4149c4c2a594346393fab4e60a740"},
+    {"name":"Phase93_output_reference.npy","bytes":786432128,"sha256":"047b821a5dc6b02abb7fe99c899b2060e52f2b14504a2c2e1605b84adb4201e8"}
   ]
 }
