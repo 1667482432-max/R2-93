@@ -18,6 +18,9 @@ powershell -ExecutionPolicy Bypass -File .\download_phase93_release_assets.ps1
 
 The script downloads the generated arrays and verifies every SHA256 in
 `phase93_release_assets.json`. No source files need to be edited afterwards.
+By default it downloads only rebuild prerequisites; add
+`-IncludeReferenceOutputs` to place the frozen P9/P10/Phase40/Phase93 reference
+arrays under `phase93_reference_assets` for comparison.
 
 ## End-to-end commands
 
