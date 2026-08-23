@@ -6,16 +6,18 @@ local Python modules imported by the two entry points.
 
 ## One-click data setup
 
-The large `.npy` inputs and the Phase93 output are release assets, not Git
-objects. From the repository directory run:
+The original competition data (training channel, train/test point clouds and
+sampling positions) is intentionally not redistributed. Provide those files
+from the authorized competition data package at the paths expected by the
+original code. The generated Phase93/P9/P10/Phase40 arrays are release assets,
+not Git objects. From the repository directory run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\download_phase93_release_assets.ps1
 ```
 
-The script downloads the release assets, verifies every SHA256 in
-`phase93_release_assets.json`, and reassembles `Round2_Train_Channel.npy` from
-its numbered parts. No paths or source files need to be edited afterwards.
+The script downloads the generated arrays and verifies every SHA256 in
+`phase93_release_assets.json`. No source files need to be edited afterwards.
 
 ## End-to-end commands
 
@@ -39,4 +41,3 @@ not tune against test truth and does not silently substitute later phases.
 - Validation result: `phase93_g56_antip10_plus_symmetric_clamp_validation.json`
 - Submission manifest: `phase93_g56_antip10_plus_symmetric_clamp_submission_manifest.json`
 - Release asset pointer: `phase93_release_assets.json`
-

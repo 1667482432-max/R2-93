@@ -17,16 +17,4 @@ foreach($item in $pointer.assets){
   $actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $dest).Hash.ToLower()
   if($actual -ne $item.sha256){ throw "SHA256 mismatch for $($item.name): $actual" }
 }
-$parts = @($pointer.train_channel_parts | Sort-Object index)
-$out = Join-Path $root 'Round2_Train_Channel.npy'
-if(Test-Path -LiteralPath $out){ throw 'Round2_Train_Channel.npy already exists; refusing overwrite' }
-$stream = [IO.File]::Open($out,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
-try {
-  foreach($part in $parts){
-    $input = [IO.File]::OpenRead((Join-Path $root $part.name))
-    try { $input.CopyTo($stream) } finally { $input.Dispose() }
-  }
-} finally { $stream.Dispose() }
-$actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $out).Hash.ToLower()
-if($actual -ne $pointer.train_channel_sha256){ throw "Reassembled channel SHA256 mismatch: $actual" }
 Write-Output "Phase93 assets ready under $root"

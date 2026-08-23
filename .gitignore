@@ -4,3 +4,6 @@ Round2_Train_Channel.npy
 Round2_Test_Channel_*.npy
 Phase93_output_reference.npy
 *.part*
+Round2_Train_Pos.npy
+Round2_Test_Pos.npy
+train_energy.npy
