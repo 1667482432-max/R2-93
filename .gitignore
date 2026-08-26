@@ -1,5 +1,14 @@
 __pycache__/
 *.pyc
+node_modules/
+*.npy
+*.building
+*.inspect.ndjson
+desktop_qa_artifacts*/
+doc_render*/
+docx_qa/
+ppt_render*/
+docx_a11y*.json
 Round2_Train_Channel.npy
 Round2_Test_Channel_*.npy
 Phase93_output_reference.npy
